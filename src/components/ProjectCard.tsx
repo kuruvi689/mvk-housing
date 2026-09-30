@@ -8,8 +8,6 @@ export default function ProjectCard({
   project: Project;
   onView: (project: Project) => void;
 }) {
-  const isCompleted = project.status === "completed";
-
   return (
     <button
       type="button"
@@ -25,13 +23,6 @@ export default function ProjectCard({
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <span
-          className={`absolute top-3 left-3 max-w-[85%] rounded-full px-3 py-1 text-[11px] font-medium tracking-wide ${
-            isCompleted ? "bg-ink/85 text-cream" : "bg-gold text-ink"
-          }`}
-        >
-          {project.statusLabel}
-        </span>
       </div>
       <div className="p-5">
         <p className="flex items-center gap-1 text-xs uppercase tracking-widest text-gold-dark">

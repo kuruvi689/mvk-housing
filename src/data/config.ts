@@ -6,7 +6,7 @@ export const budgetRangeLabel = "₹50 Lakhs – ₹2 Crore+";
 // provided 2026-09-25 - resolves handoff.md §7 Blocker #5.
 export const brandCopy = {
   quote:
-    "I don’t just sell properties. I help people find the right place to build their future.",
+    "We don’t just sell properties. We help people find the right place to build their future.",
   focus: [
     "Plots & Properties",
     "Construction & Development",
